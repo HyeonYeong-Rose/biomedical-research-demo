@@ -1,0 +1,26 @@
+{
+  "id": "raydino-chest-xray-foundation-model",
+  "title": "Advancing human-centric AI for robust X-ray analysis through holistic self-supervised learning",
+  "authors": [
+    "Théo Moutakanni",
+    "Piotr Bojanowski",
+    "Guillaume Chassagnon",
+    "Céline Hudelot",
+    "Armand Joulin",
+    "Yann LeCun",
+    "Matthew J. Muckley",
+    "Maxime Oquab",
+    "Marie-Pierre Revel",
+    "Maria Vakalopoulou"
+  ],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-76076-4",
+  "abstract": "Abstract Foundational artificial intelligence models are gaining traction in various applications, including medical fields like radiology. However, medical foundation models are often tested on limited tasks, leaving their generalisability and biases unexplored. Here we introduce RayDINO, a large-scale self-supervised visual encoder for chest X-rays trained on 840,000 images and evaluated on 82,000 images sourced from 12 publicly available datasets. We compare RayDINO to previous state-of-the-art models across nine radiology tasks, from classification and dense segmentation to text generation, and provide an in-depth analysis of population, age and sex biases of our model. Our findings suggest that self-supervision enables patient-centric analysis useful in clinical workflows, allowing for a more holistic interpretation of X-rays. With RayDINO and small task-specific adapters, we reach state-of-the-art results and improve generalization to unseen populations while mitigating bias, illustrating the versatility and robustness of foundation models.",
+  "axes": ["기관 간 일반화", "인구통계학적 편향"],
+  "takeaway": "84만 장의 흉부 X-ray로 학습한 자기지도 파운데이션 모델 RayDINO가 12개 외부 공개 데이터셋 82,000장에서 9개 과제 전반에 걸쳐 기존 최고 성능 모델보다 우수한 일반화와 편향 완화를 보였다.",
+  "relevance": "우리 코호트는 5개 기관(INST01–05)에서 수집된 272건, PA/AP 촬영 비중이 각각 184/88건이며 성별은 남녀 각 136명으로 균형이 잡혀 있지만 연령은 9–87세(평균 51.5세)로 폭이 넓어, 이 논문이 다룬 연령·성별 편향 분석 축과 직접 맞닿아 있다.",
+  "caveat": "우리 데이터는 272건 규모의 단면 코호트로 RayDINO가 검증한 82,000장 규모의 외부 검증에 준하는 통계적 검정력이 없어, 논문이 보고한 편향 완화 효과가 우리 기관 데이터에서도 재현되는지는 확인할 수 없다.",
+  "check": "RayDINO 또는 유사 파운데이션 인코더에 소규모 어댑터를 얹었을 때 우리 5개 기관 하위집합 간 No Finding 대 이상 소견 분류 성능 차이가 얼마나 줄어드는지 확인해볼 수 있는가?"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "abdomennet-nc-ct-foundation-model",
+  "title": "A foundation model for acute abdomen diagnosis stratification and triage on noncontrast computed tomography",
+  "authors": [
+    "Chao Zhu",
+    "Ruipeng Zhang",
+    "Xinyu Song",
+    "Kai Shang",
+    "Yu Lu",
+    "Wenjuan Wu",
+    "Jian Ma",
+    "Yixiao Tang",
+    "Zhongzheng Cao",
+    "Li Shen",
+    "Jianyong Wei",
+    "Lisong Dai"
+  ],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-76634-w",
+  "abstract": "Accurate and timely diagnosis of acute abdominal emergencies remains challenging. Non-contrast computed tomography (NCCT) is often used as an initial imaging modality because of atypical presentations, contraindications to contrast, or resource constraints. Here we present AbdomenNet, a multi-task AI system built on a self-supervised foundation model that detects 11 acute abdominal conditions and performs three risk-stratification subtasks from NCCT images. AbdomenNet is pre-trained on 103,989 NCCT examinations and fine-tuned on 5816 annotated cases. We assess generalizability in 2528 patients from three independent external cohorts, evaluate radiologist performance in a multi-reader multi-case crossover study, and estimate workflow impact using retrospective reconstruction. In external validation, AbdomenNet achieves a macro-average AUROC of 0.919 for five emergent conditions. AI assistance increases radiologists’ mean AUROC from 0.812 to 0.924 and reduces median reading time by 52.5 seconds per case. Workflow reconstruction indicates that AI-driven prioritization could shorten median report turnaround time by 37 minutes. The authors present AbdomenNet, a foundation model for non-contrast computed tomography. It detects 11 acute abdominal conditions, helps identify high-risk cases, improves radiologist accuracy, and may speed emergency reporting.",
+  "axes": ["기관 간 일반화", "AI 보조 판독 성능"],
+  "takeaway": "3개 외부 기관 2528명 코호트에서 검증한 복부 NCCT 파운데이션 모델 AbdomenNet이 다기관 다독자 교차 연구에서 방사선의 평균 AUROC를 0.812에서 0.924로 끌어올리고 판독 시간을 단축시켰다.",
+  "relevance": "우리 코호트 역시 5개 기관(INST01–05, 각 48–62건)에 걸친 다기관 구성이라는 점에서, 외부 기관 교차검증 및 AI 보조 판독 개선을 정량적으로 보고한 이 논문의 연구 설계가 우리 데이터에 적용할 벤치마크 틀로 참고할 만하다.",
+  "caveat": "이 논문은 복부 NCCT 영상과 응급 복부 질환을 다루며, 우리 코호트는 흉부 X-ray와 폐 소견(Infiltration, Atelectasis 등)만 포함하므로 장기·모달리티가 달라 보고된 AUROC 개선 수치를 우리 데이터에 직접 대입할 수 없다.",
+  "check": "우리 코호트의 5개 기관 중 어느 조합을 훈련/외부검증 세트로 나누었을 때 판독 성능 차이가 가장 크게 벌어지는지, AbdomenNet 방식의 다기관 교차검증 설계를 그대로 적용해볼 수 있는가?"
+}
