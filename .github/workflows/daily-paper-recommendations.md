@@ -44,7 +44,7 @@ safe-outputs:
     protected-files: allowed
     max-patch-files: 500
     max-patch-size: 4096
-timeout-minutes: 30
+timeout-minutes: 45
 ---
 
 # Daily paper recommendations
