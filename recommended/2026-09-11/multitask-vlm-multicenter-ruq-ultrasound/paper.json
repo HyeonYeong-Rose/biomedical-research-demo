@@ -1,0 +1,15 @@
+{
+  "id": "multitask-vlm-multicenter-ruq-ultrasound",
+  "title": "A multitask framework for automated multi-frame right upper quadrant ultrasound interpretation and clinical decision support",
+  "authors": ["Haiman Guo", "Cheng-Yi Li", "Yuli Wang", "Robin Wang", "Yuwei Dai", "Qinghai Peng", "Danming Cao", "Zhusi Zhong", "Thao Vu", "Linmei Zhao", "Chengzhang Zhu", "Christopher Tan"],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-77498-w",
+  "abstract": "Ultrasound is a cornerstone of emergency and hepatobiliary imaging, yet its interpretation remains highly operator-dependent and time-sensitive. Here, we present a multitask vision-language agent (VLM) developed to assist with right upper quadrant (RUQ) ultrasound interpretation across the diagnostic workflow. The system was trained on data from a single tertiary academic medical center (9189 cases, 594,099 images) and evaluated on datasets from two independent institutions (1704 cases, 90,616 images; and 108 cases, 3240 images). The agent integrates frame-level visual understanding with report-grounded language reasoning to perform three tasks: (i) classification of 16 clinical findings, (ii) generation of diagnostic reports, and (iii) surgical decision support based on ultrasound findings and clinical data. For classification, the model achieved macro areas under the receiver operating characteristic curve (AUROCs) of 0.820, 0.794, and 0.775 on the internal, University of Colorado, and Stanford cohorts, respectively, and an internal micro AUROC of 0.865. It also generated post-edited reports that were difficult for radiologists to distinguish from expert-written versions in blinded evaluations. The agent further predicted cholecystectomy using generated reports and clinical data. These results support further evaluation of vision-language models for improving diagnostic consistency, reporting efficiency, and surgical triage in ultrasound practice. Authors developed an AI system for interpreting multi-frame right upper quadrant ultrasound examinations. Across three institutions, it classified findings, generated reports, and predicted the need for cholecystectomy.",
+  "axes": ["기관 간 일반화", "보고서 구조화/재사용"],
+  "takeaway": "단일 기관에서 학습한 다과업 영상-언어 모델이 두 개의 외부 기관 데이터에서도 AUROC 0.79~0.80 수준을 유지하며 판독문 생성과 진료 결정 지원까지 확장 가능함을 보였다.",
+  "relevance": "우리 코호트는 5개 기관(INST01~05, 48~62건)과 9개 장비(DEV01~09, 15~40건)에 걸쳐 수집되어 기관·장비 간 이질성이 이미 존재하며, 이는 외부 기관 검증에서 성능이 얼마나 유지되는지가 실제 검증 대상이 될 수 있음을 시사한다.",
+  "caveat": "이 논문은 복부 초음파 데이터를 대상으로 하며 우리 코호트는 흉부 X선이므로, 동일한 다기관 일반화 폭이 흉부 X선 소견 분류에도 적용되는지는 확인할 수 없다.",
+  "check": "우리 기관별(INST01~05) 소견 분류 성능을 나누어 봤을 때 논문이 보고한 정도의 AUROC 하락(0.865→0.775)과 유사한 기관 간 격차가 나타나는가?"
+}
