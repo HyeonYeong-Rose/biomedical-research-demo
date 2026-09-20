@@ -1,0 +1,15 @@
+{
+  "id": "commercial-ai-reading-time-pulmonary-nodule-ct",
+  "title": "Impact of Commercial Artificial Intelligence on Radiologist Reading Time for Pulmonary Nodule Evaluation at Chest CT",
+  "authors": ["Jasika Paramasamy", "Arlette E. Odink", "Ties A. Mulders", "Daniël Bos", "Aad van der Lugt", "Joachim G.J.V. Aerts", "Jacob J. Visser"],
+  "venue": "Radiology",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1148/radiol.260484",
+  "abstract": "Implementation of commercial artificial intelligence–assisted pulmonary nodule assessment on chest CT scans reduced radiologist reporting time in a real-world clinical setting.",
+  "axes": ["실제 임상 워크플로 효과", "저빈도 소견 검출"],
+  "takeaway": "실제 임상 환경에 상용 AI 결절 검출 도구를 도입하자 판독의의 흉부 CT 판독 시간이 실질적으로 줄었다.",
+  "relevance": "우리 코호트에서 Nodule 소견은 7건으로 전체의 2.6%에 불과한 저빈도 클래스이며 기관별로도 1~4건씩 흩어져 있어, 결절처럼 드문 소견에서 AI 보조가 판독 부담을 줄일 수 있는지가 실무적으로 중요한 질문이다.",
+  "caveat": "이 연구는 흉부 CT 결절 검출 도구를 다루며 우리 데이터는 흉부 단순 X선(AP/PA)이므로, 동일한 판독 시간 단축 효과가 X선 판독에도 적용되는지는 확인할 수 없다.",
+  "check": "우리 기관에서 Nodule 소견이 포함된 증례의 판독 소요 시간과 No Finding 증례의 판독 소요 시간을 비교하면 실제로 차이가 나는가?"
+}

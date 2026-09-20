@@ -1,0 +1,15 @@
+{
+  "id": "illusion-clinical-reasoning-vlm-benchmark",
+  "title": "The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency",
+  "authors": ["Dingyu Wang", "Z. L. Yuan", "Jiajun Liu", "Shanggui Liu", "Nan Zhou", "Tianxing Xu", "Di Huang", "Dong Jiang"],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03191-3",
+  "abstract": "The rapid integration of foundation models into clinical practice and their use for public health inquiries necessitates a rigorous evaluation of their true clinical reasoning capabilities, which extends beyond success on narrow examinations. Current benchmarks, often based on medical licensing exams or curated vignettes, fail to capture the integrated, multimodal reasoning required in real-world patient care. To address this gap, we developed the Bones and Joints (B&J) Benchmark, a comprehensive evaluation framework comprising 1245 questions derived from real-world patient cases in orthopedics and sports medicine. This benchmark assesses models across seven core tasks that mirror the clinical reasoning pathway, including knowledge recall, text interpretation, image interpretation, diagnosis generation, treatment planning, and the underlying rationale. We evaluated 14 vision-language models (VLMs) and six large language models (LLMs), comparing their performance against expert-derived ground truth. Our findings reveal a pronounced performance gap. While state-of-the-art models achieved high accuracy, exceeding 90% on structured multiple-choice questions, their performance markedly declined on open-ended tasks requiring multimodal integration, with accuracy scarcely reaching 60%. VLMs demonstrated substantial limitations in interpreting medical images and frequently exhibited text-driven hallucinations. Notably, medical-specific models showed no consistent advantage over general-purpose counterparts. These results indicate that current foundation models face significant challenges in achieving independent clinical competence within highly specialized musculoskeletal fields. Their safe deployment should be limited to supportive, text-based roles, while advancement in core clinical tasks awaits fundamental breakthroughs in multimodal integration and visual understanding.",
+  "axes": ["영상-언어 모델 신뢰성", "선택적 자동화/불확실성 추정"],
+  "takeaway": "다과제 임상 벤치마크에서 최신 영상-언어 모델은 객관식 문제(90%대 정확도)와 달리 실제 영상 해석·서술형 진단 과제에서는 정확도가 60%대까지 떨어지며, 의료 특화 모델도 일반 모델 대비 뚜렷한 우위가 없었다.",
+  "relevance": "우리 코호트는 5개 기관·9개 장비에 걸친 흉부 X선 272건으로 다양한 소견 조합(단일 소견부터 4개 동시 소견까지)을 포함하므로, 영상-언어 모델을 서술형 판독 보조에 쓸 경우 구조화된 분류 과제보다 자유 서술 해석에서 성능이 크게 떨어질 위험을 이 논문의 지적과 함께 점검할 필요가 있다.",
+  "caveat": "이 벤치마크는 정형외과·스포츠의학 영상을 대상으로 하며 흉부 X선 판독에는 적용되지 않으므로, 동일한 정도의 서술형 과제 성능 저하가 흉부 소견 판독에서도 나타나는지는 우리 데이터로 확인할 수 없다.",
+  "check": "동일 모델에 우리 코호트의 다중 소견 증례(예: Atelectasis|Effusion|Infiltration)를 구조화된 분류 질문과 자유 서술 판독 질문으로 각각 주었을 때 정확도 차이가 이 논문 수준(90%대 대 60%대)으로 벌어지는가?"
+}
