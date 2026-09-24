@@ -1,0 +1,28 @@
+{
+  "id": "conditional-generative-infrared-spectra-phenotyping",
+  "title": "Conditional deep generative modeling of blood-based infrared spectra enables controlled in-silico phenotyping studies",
+  "authors": [
+    "Niklas Leopold-Kerschbaumer",
+    "Timo Halenke",
+    "Selina Süzeroğlu",
+    "Moritz Jung",
+    "Mariia Seleznova",
+    "Nicole Thorisch",
+    "Jeanette M. Lorenz",
+    "Thomas Bocklitz",
+    "Bjoern M. Eskofier",
+    "Gitta Kutyniok",
+    "Ferenc Krausz",
+    "Kosmas V. Kepesidis"
+  ],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03226-9",
+  "abstract": "Abstract Infrared molecular fingerprinting of blood offers a scalable, minimally invasive window into human physiology, but limited follow-up, imbalanced cohorts, and restricted access to diverse phenotypes constrain systematic studies. Here, we introduce a conditional deep generative framework for synthesizing blood-based infrared spectra that preserves individual-level structure while allowing controlled manipulation of demographic and anthropometric covariates. Using 25,308 spectra from 5,863 ostensibly healthy participants in the longitudinal Health4Hungary - Hungary4Health cohort, we train a Conditional Variational Autoencoder, a Conditional Boundary Equilibrium GAN, and a Conditional Diffusion Model to generate blood-based infrared spectra conditioned on age, sex, and body mass index. We show that the generated spectra closely match held-out real data across multiple levels and faithfully encode demographic and anthropometric information. We further demonstrate two in-silico applications: modeling of individualized healthy aging trajectories that follow cohort-level aging manifolds while retaining individual-specific characteristics, and targeted augmentation of underrepresented body mass index categories. Together, these results demonstrate the feasibility of utilizing conditional generative modeling of blood-based infrared spectra for virtual cohort construction, cohort balancing, and controlled in-silico phenotyping, paving the way toward more comprehensive and data-efficient studies in precision health.",
+  "axes": ["합성 데이터 신뢰성", "코호트 불균형"],
+  "takeaway": "연령·성별·체질량지수 조건을 지정해 생성한 합성 혈액 적외선 스펙트럼이 실제 보류 데이터와 인구통계학적 특성을 충실히 재현하며, 희소 하위집단 증강에 활용할 수 있다.",
+  "relevance": "우리 코호트는 성별이 남 136 / 여 136 명으로 균형이지만 평균 연령은 여성 54.3세, 남성 48.7세로 차이가 있고 소견 분포도 No Finding 145건에 비해 Nodule 7건, Pneumothorax 5건처럼 희귀 소견이 매우 적어, 조건부 생성 모델로 하위집단을 보강하려는 이 논문의 동기와 맞닿아 있다.",
+  "caveat": "이 논문은 혈액 적외선 스펙트럼이라는 표 형태 신호를 다루므로, 흉부 X-ray 영상의 공간적 병변 패턴까지 동일한 방식으로 합성·검증할 수 있는지는 확인해 주지 않는다.",
+  "check": "우리 데이터에서 소견별(예: Nodule, Pneumothorax) 표본 수가 극히 적은 하위집단을 조건부 생성으로 보강했을 때, 실제 판독 소견 분포와 얼마나 일치하는지 검증할 수 있는가?"
+}
