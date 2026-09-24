@@ -1,0 +1,28 @@
+{
+  "id": "provenance-risk-synthetic-ultrasound-generator",
+  "title": "Staged purpose-blinded evaluation of provenance risk from a general-purpose generator in breast ultrasound",
+  "authors": [
+    "Zhenqi Zhang",
+    "Min Zhuang",
+    "Ziyue Hu",
+    "Yi Li",
+    "Shuchen Zhang",
+    "Yin Li",
+    "Huaying Bo",
+    "Minggang Wu",
+    "Jing Zhao",
+    "Chaoyang Luo",
+    "Qing Yang",
+    "Xinxin Xian"
+  ],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03209-w",
+  "abstract": "Commercial general-purpose image generators may create medical-looking content outside controlled medical-AI research, raising provenance concerns. We evaluated a general-purpose generator that produced breast ultrasound images without medical-specific development or patient-image inputs. The primary scientific component was a purpose-blinded Phase 1 design in which 12 readers assessed 60 images per source without knowing synthetic images were present, measuring pre-verification vulnerability. Crossed reader-and-image models showed higher reader-perceived quality for synthetic images (difference, 0.44; 95% CI, 0.33–0.55) and higher model-estimated sufficiency for basic image-level judgement (95.9% versus 86.7%). Only 3 of 12 readers spontaneously questioned provenance. Phase 2 measured explicit provenance detection (accuracy, 70.8%); a separate cue-supported Phase 3 set without file-level overlap provided exploratory workflow-response signals (accuracy, 79.5%). Readers selected review, verification or non-use in 94.9% of synthetic-image evaluations. This staged acceptance–detection–response framework identifies cross-domain provenance risk but does not establish clinical fidelity, diagnostic equivalence or causal intervention efficacy.",
+  "axes": ["합성 데이터 신뢰성"],
+  "takeaway": "일반 목적 생성기가 만든 초음파 영상은 판독의가 사전 정보 없이는 진위를 잘 구분하지 못하며, 명시적으로 출처를 의심하도록 유도해야 검출률이 올라간다.",
+  "relevance": "우리 코호트 272건 전량이 is_synthetic=true 로 표시된 합성 흉부 X-ray이며, 5개 기관 코드(INST01–05)와 정상/이상 소견이 혼재되어 있어, 판독자가 합성 여부를 인지하지 못한 채 소견을 신뢰할 위험이 이 논문이 지적하는 구조와 동일하다.",
+  "caveat": "이 논문은 유방 초음파 단일 생성기를 다뤘고 우리 데이터는 흉부 X-ray이므로, 검출 정확도나 판독 신뢰도 수치를 그대로 우리 코호트에 적용할 수는 없다.",
+  "check": "우리 합성 흉부 X-ray 데이터에서도 판독자에게 출처를 알리지 않았을 때와 명시적으로 확인을 요청했을 때 소견 판독 일치도가 달라지는지 별도 리더 스터디로 확인할 수 있는가?"
+}
