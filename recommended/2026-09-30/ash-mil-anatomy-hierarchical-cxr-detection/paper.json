@@ -1,0 +1,28 @@
+{
+  "id": "ash-mil-anatomy-hierarchical-cxr-detection",
+  "title": "Anatomy-Structured Hierarchical MIL for Weakly-Supervised Thoracic Disease Detection in Chest X-rays",
+  "authors": [
+    "Jeongin Kim",
+    "Sohyun Ahn",
+    "Seo Young Kang",
+    "Jaeyi Sung",
+    "Soomin Kim",
+    "Sungho Cho",
+    "Rena Lee",
+    "Kwanchang Kim",
+    "Junhyug Noh"
+  ],
+  "venue": "MICCAI",
+  "year": 2026,
+  "source": "arXiv",
+  "url": "https://arxiv.org/abs/2609.33520v1",
+  "abstract": "Weakly-supervised thoracic disease detection in chest X-rays (CXR) is challenging due to subtle appearances and complex anatomical overlap, motivating anatomy-aware modeling for improved localization. However, prior anatomy-aware methods typically rely on coarse region proxies or static spatial priors, which may restrict dynamic instance discovery and limit precise localization of small abnormalities. We propose Anatomy-Structured Hierarchical Multiple Instance Learning (ASH-MIL), a framework that introduces parallel anatomy-structured observation branches (cardiac, pulmonary, and agnostic) combined with hierarchical MIL aggregation. Anatomical priors are injected as soft spatial biases into decoder cross-attention, enabling anatomically grounded evidence maps without disease bounding-box supervision. Instance localization is derived directly from MIL-weighted cross-attention maps without bounding box supervision. Experiments on CXR8 and cross-domain MIMIC-CXR held-out sets demonstrate consistent improvements over prior weakly-supervised and anatomy-aware approaches, particularly under stricter localization criteria. Our code is available at https://github.com/jn-kim/ash-mil.",
+  "axes": [
+    "기관 간 일반화",
+    "롱테일 라벨 분포"
+  ],
+  "takeaway": "CXR8과 MIMIC-CXR 외부 보유 세트에서, 해부학 구조를 반영한 계층적 MIL이 박스 라벨 없이도 기존 약지도 방법보다 병변 위치 추정이 좋았다고 주장한다.",
+  "relevance": "우리 코호트는 흉부 X선 272건(환자 153명)이며 이 중 127건(46.7%)에 이상 소견이 있고, 라벨 체계가 CXR8(ChestX-ray14)과 같은 14종 형식입니다. 침윤 45건, 흉수 33건, 무기폐 32건처럼 논문이 다루는 흔한 소견이 일정 수 존재하고, 다중 라벨 사례도 50건 있어 겹침 소견의 평가 대상이 됩니다.",
+  "caveat": "우리 데이터에는 병변 위치(박스) 주석이 없어 논문의 핵심인 위치 추정 정확도는 확인할 수 없습니다. 또한 임상 판독자 평가 없이 공개 벤치마크 지표만 보고합니다.",
+  "check": "결절(12건)처럼 작은 병변에서 해부학 사전 정보가 분류 성능을 실제로 높이는지, 기관별로 차이가 있는지 확인해 볼 수 있는가?"
+}

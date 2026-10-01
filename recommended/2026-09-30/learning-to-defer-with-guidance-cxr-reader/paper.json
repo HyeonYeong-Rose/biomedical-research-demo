@@ -1,0 +1,21 @@
+{
+  "id": "learning-to-defer-with-guidance-cxr-reader",
+  "title": "Learning to Defer with Guidance on Real World Medical Data",
+  "authors": [
+    "Emma Sun",
+    "Joshua Strong",
+    "Alison Noble"
+  ],
+  "venue": "MICCAI",
+  "year": 2026,
+  "source": "arXiv",
+  "url": "https://arxiv.org/abs/2609.26384v1",
+  "abstract": "Medical image interpretation is high-volume and time-consuming, and while AI interpretation can reduce workload, fully autonomous deployment carries potential safety concerns and low specificity may in practice lead to increased clinician workload. Learning to Defer (L2D) addresses this by selectively routing cases between autonomous prediction and human experts by learning from input features and AI model and human performance. While theoretical guarantees have been proven for L2D, its performance has not been validated on real-world medical datasets with human reader annotations. We evaluate the predictor-rejector formulation of two-stage L2D, where the AI predictor model is fixed and separate from the trainable routing or rejector model, on Collab-CXR, a multilabel chest X-ray dataset with multiple human annotations per case. This is the first work to look at L2D in the context of real-world medical imaging data with human annotations. We further introduce a new setup, L2D with Guidance, where the decision space is extended to three choices: predict autonomously, defer to a human expert, or defer to a human expert and provide AI guidance. We compare multiple rejector architectures and loss functions, and different input feature availabilities. This is reproduced on two larger datasets, VinDr-CXR and CheXpert. Our results show that two-stage L2D with Guidance outperforms classic two-stage learning to defer, as well as human-alone, AI-alone and AI-guided human baselines. Notably, this performance is achieved with simpler loss functions compared to formally defined L2D surrogate loss functions in current literature.",
+  "axes": [
+    "판독자 협업"
+  ],
+  "takeaway": "다중 판독자 주석이 있는 흉부 X선에서, AI 단독 예측·전문가 위임·AI 안내와 함께 위임하는 세 갈래 선택이 기존 L2D와 단독 기준보다 우수했다고 주장한다.",
+  "relevance": "우리 코호트는 AP 촬영 88건(32.4%), PA 촬영 184건으로 촬영 조건이 섞여 있어 AI가 불확실한 사례를 판독자에게 넘기는 시나리오가 의미 있습니다. 이상 소견이 46.7%로 비교적 많아 위임 비율의 영향을 가늠해 볼 수 있습니다.",
+  "caveat": "우리 데이터에는 다중 판독자의 개별 주석이나 판독 시간이 없어 위임 규칙의 이득 자체는 검증할 수 없습니다. 판독 결과는 하나의 라벨만 있습니다.",
+  "check": "불확실성이 높은 사례가 AP 촬영이나 다중 소견 사례에 몰리는지를 우리 라벨로 먼저 확인해 볼 수 있는가?"
+}
