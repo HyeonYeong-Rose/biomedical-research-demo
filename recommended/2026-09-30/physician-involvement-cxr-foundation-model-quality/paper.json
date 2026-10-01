@@ -1,0 +1,24 @@
+{
+  "id": "physician-involvement-cxr-foundation-model-quality",
+  "title": "Physician involvement and research quality in chest X-ray foundation models",
+  "authors": [
+    "Ammar Ahmed Pallikonda Latheef",
+    "V.J. Phillips",
+    "Aditya Kulkarni",
+    "Changhyun Park",
+    "Pritam Mukherjee",
+    "Paul H. Yi"
+  ],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03205-0",
+  "abstract": "Chest radiograph foundation models (FMs) are developing rapidly, yet their reporting practices remain unknown. We systematically reviewed 41 FMs published through 3/24/2025 and assessed technical trends, CLAIM adherence, artifact sharing, and physician co-authorship. Transformers and large language model components were increasingly common, while model sharing was limited. Physician co-authorship was associated with higher CLAIM adherence and more frequent fairness discussion, supporting clearer reporting standards for clinically oriented AI research.",
+  "axes": [
+    "보고 품질"
+  ],
+  "takeaway": "흉부 X선 파운데이션 모델 41편을 검토한 결과, 의사가 공저자로 참여한 연구에서 CLAIM 준수와 공정성 논의가 더 잦았다.",
+  "relevance": "우리 코호트는 합성 데이터로 성별(남 136건, 여 136건), 연령 9~87세, 5개 기관이 섞여 있어 공정성·하위집단 보고 항목을 점검하는 기준 틀로 쓸 수 있습니다. 다만 이 논문은 모델이 아닌 보고 관행을 다룹니다.",
+  "caveat": "체계적 검토이므로 우리 데이터로는 어떤 모델의 성능도 확인해 줄 수 없습니다. 또한 합성 데이터라 실제 공정성 평가를 대신하지 못합니다.",
+  "check": "후속 분석에서 CLAIM 체크리스트의 어떤 항목을 우리 분석 계획에 그대로 적용할 수 있는가?"
+}
