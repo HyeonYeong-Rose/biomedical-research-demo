@@ -1,0 +1,31 @@
+{
+  "id": "medgemma-open-vlm-medical",
+  "title": "An open vision-language model for diverse medical applications",
+  "authors": [
+    "Andrew Sellergren",
+    "Sahar Kazemzadeh",
+    "Fereshteh Mahvar",
+    "Atilla P. Kiraly",
+    "Madeleine Traverse",
+    "Timo Kohlberger",
+    "Chufan Gao",
+    "Ronnachai Jaroensri",
+    "Shawn Xu",
+    "Fayaz Jamil",
+    "Cían Owen Hughes",
+    "Charles T. Lau"
+  ],
+  "venue": "Nature Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41591-026-04626-w",
+  "abstract": "Abstract Artificial intelligence has high potential for impact in healthcare applications, but its training and deployment are challenging due to diverse data, a complex spectrum of possible tasks and important privacy needs. High-performing foundation models that enable data-efficient fine-tuning for diverse downstream tasks can meaningfully accelerate development in this domain. We introduce MedGemma, a collection of medical vision-language foundation models based on Gemma 3. MedGemma demonstrates advanced medical understanding and reasoning across images and text and multiple medical imaging domains, exceeding the performance of similarly sized generative models while maintaining the general capabilities of the Gemma base models. For out-of-distribution tasks, MedGemma achieves improvements of 2.6–10% in medical image question answering, 15.5–18.1% in chest X-ray finding classification and 10.8% in agentic evaluations compared with the base models. Our results show that fine-tuning MedGemma can be more effective than fine-tuning the base Gemma 3 model for medical tasks, particularly in the setting of limited training data. We additionally introduce MedSigLIP, a medically tuned vision encoder derived from SigLIP. MedSigLIP powers the visual understanding capabilities of MedGemma and, as an encoder, achieves performance comparable to or better than that of many specialized medical image encoders. Taken together, the MedGemma collection provides a strong foundation of medical image and text capabilities, with the potential to accelerate medical research and the development of downstream applications.",
+  "axes": [
+    "기초 모델 외부 일반화",
+    "소량 데이터 미세조정"
+  ],
+  "takeaway": "의료용 비전-언어 기초 모델 MedGemma가 분포 밖 과제에서 기본 모델보다 흉부 X선 소견 분류를 15.5–18.1% 개선했고, 데이터가 적을 때 미세조정 효과가 크다고 보고한다.",
+  "relevance": "우리 코호트는 흉부 X선 272건(환자 153명)으로 규모가 작아, 소량 데이터 미세조정이라는 논문의 시나리오와 맞습니다. 이상 소견 127건(46.7%) 중 다중 라벨이 50건이고 5개 기관에서 왔으며, 촬영 자세도 PA 184 / AP 88로 섞여 있어 기관·자세 간 성능 차이를 점검할 수 있습니다.",
+  "caveat": "우리 데이터는 합성 데이터이고 기관당 48–62건뿐이라, 논문의 성능 향상이 실제 임상 환경에서 재현되는지는 확인할 수 없습니다. 판독의 비교나 임상 결과 지표도 없습니다.",
+  "check": "정상 145건과 이상 127건에서 MedGemma 계열 인코더의 소견 분류가 기관(INST01~05)과 촬영 자세(AP/PA)별로 일관된지 확인해 볼 수 있는가?"
+}
