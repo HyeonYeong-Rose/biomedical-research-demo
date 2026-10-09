@@ -1,0 +1,25 @@
+{
+  "id": "concept-intervention-debugging-medical-imaging",
+  "title": "Beyond Explanation: Debugging Medical Imaging Models via Concept Intervention",
+  "authors": [
+    "Samrajya Thapa",
+    "Daniel J. Quest",
+    "Timothy L. Kline",
+    "Carrie L. Langstraat",
+    "Emanuel C. Trabuco",
+    "Wei Le"
+  ],
+  "venue": "MICCAI",
+  "year": 2026,
+  "source": "arXiv",
+  "url": "http://arxiv.org/abs/2610.09031v1",
+  "abstract": "Medical imaging models often operate as black boxes, limiting interpretability and systematic debugging. We introduce an easy-to-use, plug-and-play framework for concept-based interpretation and model refinement. By aligning a single-modality encoder to BioMedCLIP, we construct a Concept Bottleneck Model (CBM) that enables concept-level interventions. These interventions allow us to isolate causal versus spuriously correlated concepts, validate insights with domain experts, and generate counterfactual samples for targeted fine-tuning. We evaluate our framework on a Mayo Clinic ultrasound dataset and the CheXpert 5x200 chest X-ray dataset. Results demonstrate that concept intervention enables reliable model diagnosis while maintaining, and occasionally improving predictive performance via guided fine-tuning. Our findings highlight the practical value of this framework for controlled, interpretable refinement of clinical deep learning models.",
+  "axes": [
+    "가짜 상관 진단",
+    "기초 모델 외부 일반화"
+  ],
+  "takeaway": "개념 병목 모델에 개입해 인과적 개념과 가짜 상관 개념을 구분하고, 반사실 샘플로 미세조정하면 CheXpert 5x200에서 성능을 유지하거나 때로 개선한다고 주장한다.",
+  "relevance": "우리 코호트는 5개 기관, 장비 9종, AP 88 / PA 184로 촬영 조건이 이질적이어서 모델이 소견 대신 촬영 조건을 학습했는지 점검할 만한 구조입니다. 이상 소견은 127건(46.7%)이며 다중 라벨 50건이 있어 개념 단위 점검 대상이 됩니다.",
+  "caveat": "우리 데이터에는 임상의가 검증한 개념 주석이 없어 논문의 개념 개입 결과가 우리 환경에서 맞는지는 확인할 수 없습니다. 논문의 흉부 X선 평가는 CheXpert 5x200이라는 작은 공개 벤치마크에 한정됩니다.",
+  "check": "AP와 PA, 또는 기관·장비 차이가 개념 수준의 가짜 상관으로 나타나는지 개념 개입으로 확인할 수 있는가?"
+}
