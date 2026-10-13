@@ -1,0 +1,28 @@
+{
+  "id": "ai-osrm-opportunistic-osteoporosis-cxr",
+  "title": "Artificial intelligence for opportunistic osteoporosis screening on chest radiographs",
+  "authors": [
+    "Youngjune Kim",
+    "Dong Hyun Lee",
+    "Sun-ju Byeon",
+    "Hye Soo Cho",
+    "Seungkwan Jo",
+    "Chang Min Park",
+    "Joon Woo Lee",
+    "Minyoung Chung",
+    "Ju Gang Nam"
+  ],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03333-7",
+  "abstract": "We developed an artificial intelligence model (AI-OsRM) to predict osteoporosis and reduced bone mineral density (BMD) from chest radiographs (CXR) and evaluated its performance and clinical utility across three external cohorts. AI-OsRM was developed using 46,478 paired CXR and dual-energy X-ray absorptiometry (DXA) examinations from 26,757 patients collected at a tertiary referral hospital between 2016 and 2022, using a ResNet-based architecture with masked autoencoder pretraining. External validation was performed in three independent cohorts, including a temporally separated hospital cohort (SNUH; n = 6391) and two large health checkup cohorts (HPC, n = 24,132; YSMC, n = 122,535). In the SNUH cohort, AI-OsRM achieved an area under the receiver operating characteristic curve (AUROC) of 0.88 (95% CI: 0.87–0.89) for both osteoporosis and reduced BMD. In the health checkup cohorts, AUROCs for osteoporosis detection were 0.93 (95% CI: 0.92–0.93) in HPC and 0.92 (95% CI: 0.92–0.92) in YSMC. Simulation analyses demonstrated that AI-OsRM–based prescreening could reduce DXA utilization by approximately 50% while maintaining detection of 98-99% of osteoporosis cases and 80–90% of reduced BMD cases. These findings suggest that AI-OsRM can enable accurate identification of individuals with osteoporosis or reduced BMD and may serve as an effective prescreening tool to optimize DXA utilization.",
+  "axes": [
+    "기관 간 일반화",
+    "기회적 선별검사"
+  ],
+  "takeaway": "흉부 X선만으로 골다공증과 골밀도 감소를 예측하는 AI-OsRM이 세 개 외부 코호트에서 AUROC 0.88–0.93을 보였고, 사전선별로 DXA 사용을 약 50% 줄이면서 골다공증의 98–99%를 찾아낼 수 있다고 보고한다.",
+  "relevance": "우리 코호트는 흉부 X선 272건이며 5개 기관(기관당 48–62건), 장비 9종, PA 184 / AP 88건이 섞여 있어, 논문이 다룬 기관·촬영 조건 간 일반화 문제와 맞닿아 있습니다. 50세 이상이 162건(59.6%), 65세 이상이 57건(21.0%)으로 골다공증 선별 대상 연령대가 상당 부분을 차지합니다.",
+  "caveat": "우리 데이터에는 DXA·골밀도 값이나 골다공증 진단 라벨이 없고 합성 데이터이므로 논문의 성능과 DXA 절감 효과를 확인할 수 없습니다. 소견 라벨도 폐·흉막 질환 중심입니다.",
+  "check": "기관(INST01~05)과 촬영 자세(AP/PA)별로 흉부 X선 기반 골밀도 예측 점수의 분포가 일관되게 나오는지 확인해 볼 수 있는가?"
+}
