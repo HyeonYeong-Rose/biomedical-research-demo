@@ -1,0 +1,15 @@
+{
+  "id": "continual-learning-adult-to-neonatal-cxr",
+  "title": "Repurposing adult AI radiograph models for neonatal care through continual learning: an international multicentre study",
+  "authors": ["Vishwanatha M. Rao", "Emma Chen", "Agustina Saenz", "Oishi Banerjee", "Henrik Marklund", "Lucas Bijnens", "Sung Eun Kim", "Evan James Zucker", "Susan Cheng Shelmerdine", "J Ramírez Palacio", "Kent R. Kleinschmidt", "Sathvik Suryadevara"],
+  "venue": "Nature Biomedical Engineering",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41551-026-01812-6",
+  "abstract": "Despite growing clinical adoption of artificial intelligence in radiology, fewer than one in five commercially available models are cleared for paediatric use. Existing systems are trained predominantly on adult data and generalize poorly to neonates, yet efficient strategies for repurposing them without data sharing or large-scale local data curation are lacking. Here we present an international retrospective study of neonatal chest radiographs from 30 neonatal intensive care units across 20 countries and territories, evaluating continual learning as a privacy-preserving approach to adapt a deep learning model for adult endotracheal tube assessment to neonatal care. Each hospital contributed 50 radiographs for sequential model retraining without centralized data pooling. Continual learning achieved lower anatomical landmark localization error (0.67 cm versus 1.29 cm for hospital-specific fine-tuning and 4.30 cm for adult-only models) at 29 of 30 sites, with improved detection of deep intubations at 27 of 30 sites. These findings demonstrate that privacy-preserving collaborative learning can address critical gaps in paediatric AI deployment.",
+  "axes": ["기관 간 일반화", "흉부 X선 기회적 선별"],
+  "takeaway": "기관마다 50장의 X선만으로 개인정보를 공유하지 않고 순차적으로 재학습하면, 성인 모델이 신생아 X선에서 30개 기관 중 29곳에서 위치 오차를 줄인다.",
+  "relevance": "우리 코호트는 5개 기관(기관당 48~62건)에 걸쳐 있고 장비도 9종이어서, 기관당 소량의 데이터로 적응시키는 이 논문의 규모와 비슷합니다. 18세 미만이 9건뿐이고 평균 연령이 51.5세라서 성인 영상 중심의 이질성을 다루는 사례로 참고할 수 있습니다.",
+  "caveat": "우리 데이터에는 신생아 영상이나 기관 삽입 튜브 위치 참값이 없어 소아 일반화 결과를 확인할 수 없습니다. 기관별 이상 소견 비율(약 0.33~0.53) 차이가 분포 이동을 뜻하는지도 이 규모로는 단정할 수 없습니다.",
+  "check": "기관당 50장 수준의 적응 데이터로 충분한지, 순차 재학습 순서가 기관별 성능에 어떤 영향을 주는지 논문에서 확인할 수 있는가?"
+}
